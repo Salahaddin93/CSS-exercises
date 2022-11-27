@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>replit</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+      label {
+        cursor: pointer;
+      }
+      input {
+        display: none;
+      }
+      input.burger:checked + ul {
+        display: block;
+      }
+      ul.menu {
+        width: 130px;
+        margin: 0px;
+        padding: 0px;
+        display: none;
+      }
+      ul li {
+        width: 130px;
+        background-color: rgb(138, 138, 138);
+        list-style: none;
+
+        border-radius: 5px;
+        margin: 5px 0.5px;
+        box-shadow: 2px 2px rgb(68, 68, 68);
+      }
+      ul li a {
+        display: inline-block;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 500;
+      }
+      input:checked ul {
+        display: inline-block;
+      }
+    </style>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <body>
+    <label for="burger"><i class="fa-solid fa-bars"></i></label>
+    <input type="checkbox" value="" id="burger" class="burger" />
+
+    <ul class="menu">
+      <li>
+        <a href="#home"
+          ><i class="fa-solid fa-grip-lines-vertical"></i> &nbsp Anasayfa</a
+        >
+      </li>
+      <li>
+        <a href="#products"
+          ><i class="fa-solid fa-grip-lines-vertical"></i> &nbspÜrünler</a
+        >
+      </li>
+      <li>
+        <a href="blog"
+          ><i class="fa-solid fa-grip-lines-vertical"></i> &nbspBlog</a
+        >
+      </li>
+      <li>
+        <a href="contact"
+          ><i class="fa-solid fa-grip-lines-vertical"></i> &nbspİletişim</a
+        >
+      </li>
+    </ul>
+  </body>
+</html>
