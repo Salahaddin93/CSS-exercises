@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <style>
+      table {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 200;
+      }
+      table th {
+        border: 2px solid rgb(156, 157, 158);
+        background-color: black;
+        color: aliceblue;
+      }
+      table td {
+        border: 2px solid rgb(139, 139, 139);
+      }
+      table tr:nth-child(even) {
+        background-color: rgb(212, 212, 212);
+      }
+      table td:nth-child(3) {
+        text-align: center;
+      }
+      table td:nth-child(4),
+      table td:nth-child(5) {
+        text-align: right;
+      }
+      .main {
+        background-color: rgb(232, 235, 235);
+        display: inline-block;
+        padding: 1rem;
+      }
+      .main div.in {
+        display: inline-block;
+        padding: 0;
+        background-color: grey;
+        color: aliceblue;
+        
+      }
+      .main div.terms {
+        text-align: right;
+        
+      }
+      .main input {
+        display: none;
+      }
+      div.terms a{
+        text-decoration: none;
+        display: inline-block;
+        color: aliceblue;
+        padding: 0.25rem 1rem;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Order Basket</h1>
+    <div class="main">
+      <table>
+        <tr>
+          <th>Ürün Kodu</th>
+          <th>Ürün adı</th>
+          <th>Miktar</th>
+          <th>Birim fiyat</th>
+          <th>Ara Toplam</th>
+          <th></th>
+        </tr>
+        <tr>
+          <td>154654</td>
+          <td>Notebook</td>
+          <td>1</td>
+          <td>5.400TL</td>
+          <td>5.400TL</td>
+          <td>
+            <a href=""><i class="fa-solid fa-pen-to-square"></i></a>&nbsp;<a
+              href=""
+              ><i class="fa-solid fa-trash-can"></i
+            ></a>
+          </td>
+        </tr>
+        <tr>
+          <td>456466</td>
+          <td>Klavye</td>
+          <td>2</td>
+          <td>80TL</td>
+          <td>160TL</td>
+          <td>
+            <a href=""><i class="fa-solid fa-pen-to-square"></i></a>&nbsp;<a
+              href=""
+              ><i class="fa-solid fa-trash-can"></i
+            ></a>
+          </td>
+        </tr>
+        <tr>
+          <td>564646</td>
+          <td>Monitör</td>
+          <td>1</td>
+          <td>700TL</td>
+          <td>700TL</td>
+          <td>
+            <a href=""><i class="fa-solid fa-pen-to-square"></i></a>&nbsp;<a
+              href=""
+              ><i class="fa-solid fa-trash-can"></i
+            ></a>
+          </td>
+        </tr>
+        <tr>
+          <td>123598</td>
+          <td>Mouse</td>
+          <td>2</td>
+          <td>50TL</td>
+          <td>100TL</td>
+          <td>
+            <a href=""><i class="fa-solid fa-pen-to-square"></i></a>&nbsp;<a
+              href=""
+              ><i class="fa-solid fa-trash-can"></i
+            ></a>
+          </td>
+        </tr>
+        <tr>
+          <td>613448</td>
+          <td>Playstation</td>
+          <td>1</td>
+          <td>2.500TL</td>
+          <td>2.500TL</td>
+          <td>
+            <a href=""><i class="fa-solid fa-pen-to-square"></i></a>&nbsp;<a
+              href=""
+              ><i class="fa-solid fa-trash-can"></i
+            ></a>
+          </td>
+        </tr>
+        <tr>
+          <td>789799</td>
+          <td>USB Station</td>
+          <td>3</td>
+          <td>120TL</td>
+          <td>360TL</td>
+          <td>
+            <a href=""><i class="fa-solid fa-pen-to-square"></i></a>&nbsp;<a
+              href=""
+              ><i class="fa-solid fa-trash-can"></i
+            ></a>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4" style="text-align: right">Toplam &nbsp;:</td>
+          <td>9.220TL</td>
+          <td></td>
+        </tr>
+      </table>
+      <br />
+      <div class="terms">
+        <div class="in">
+            <a href="#">
+                <label for="basket"></label>
+                <i class="fa-solid fa-credit-card">&nbsp;</i> Ödemeye Geç</label
+              >
+              <input type="button" id="busket" />
+            </a>
+        </div>
+        <div class="in">
+          <a href="#">
+            <label for="credit"></label>
+            <i class="fa-solid fa-credit-card">&nbsp;</i> Ödemeye Geç</label
+          >
+          <input type="button" id="credit" />
+        </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
